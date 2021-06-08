@@ -118,8 +118,8 @@ $(document).ready(function () {
 
   // contact - click
   $('#contact').click(function () {
-    $(".contact-us").show();
-    $('.faq-menu').animate({ top: '500px' }, 'slow').css({ display: 'none' });
+    $(".contact-us").show(),
+    $('.faq-menu').animate({ top: '500px' }, 'slow').css({ display: 'none' }),
     $('.s-locations').css({ display: 'none' }),
     $('.order-history').css({ display: 'none' });
   });
@@ -127,8 +127,8 @@ $(document).ready(function () {
 
   // faq - click
   $('#faq').click(function () {
-    $(".contact-us").hide();
-    $('.faq-menu').css({ display: 'block' }).animate({ top: '-500px' });
+    $(".contact-us").hide(),
+    $('.faq-menu').css({ display: 'block' }).animate({ top: '-500px' }),
     $('.s-locations').css({ display: 'none' }),
     $('.order-history').css({ display: 'none' });
   });
@@ -141,8 +141,8 @@ $(document).ready(function () {
 
   // store locations - click
   $('#store-locations').click(function () {
-    $('.contact-us').hide();
-    $('.faq-menu').css({ display: 'none' });
+    $('.contact-us').hide(),
+    $('.faq-menu').css({ display: 'none' }),
     $('.s-locations').css({ display: 'block' }).animate({ right: '500px' }),
     $('.order-history').css({ display: 'none' });
   });
@@ -150,8 +150,8 @@ $(document).ready(function () {
 
   // order history
   $('#order-history').click(function () {
-    $('.contact-us').hide();
-    $('.faq-menu').css({ display: 'none' });
+    $('.contact-us').hide(),
+    $('.faq-menu').css({ display: 'none' }),
     $('.s-locations').css({ display: 'none' }).animate({ right: '500px' }),
     $('.order-history').css({ display: 'block' });
   });
