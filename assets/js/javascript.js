@@ -5,6 +5,17 @@ $(document).ready(function () {
   });
   // /header menu
 
+  // desktop header tab menu
+  $(function(){
+    $(".nav-links li a").on("click", function() {
+    $(".tabBoxes").toggle();
+    // $($(this).attr("href")).fadeToggle();
+    });
+    return false;
+    });
+
+  // /desktop header tab menu 
+
   // home - slider
   $('.slick-track').slick({
     infinite: true,

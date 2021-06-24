@@ -28,7 +28,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
 }
 
 .header-left {
@@ -60,11 +60,15 @@ header {
   display: none;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .nav-links ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
-  padding: 20px;
 }
 
 .nav-links ul li a {
@@ -81,6 +85,33 @@ header {
 
 .mobile-menu {
   display: none;
+}
+
+.tabBoxes {
+  z-index: 3;
+  display: none;
+  float: right;
+  margin-right: 143px;
+  position: relative;
+}
+
+#tabBox1 {
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+}
+
+#tabBox1 a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px 0 10px 10px;
+}
+
+#tabBox1 a:hover {
+  text-decoration: underline;
 }
 
 /* header */
@@ -107,12 +138,16 @@ header {
   padding: 30px 50px;
   margin-bottom: 0;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
+.top-page i {
+  font-size: 15px;
+}
+
 .top-page a:hover {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 /* / top page */
@@ -141,13 +176,13 @@ header {
   background-image: url(./../../images/jeans.jpg);  
 }
 
-#home-slide #slide-jeans2 {
+/* #home-slide #slide-jeans2 {
   background-image: url(./../../images/home_jeans2.jpg);
 }
 
 #home-slide #slide-jeans3 {
   background-image: url(./../../images/home_jeans.jpg);
-}
+} */
 
 .home-slide-contents {
   position: absolute;
@@ -475,7 +510,7 @@ a.shopNow-button:hover::before {
 
 /* /news text */
 
-/* footer */
+/* Lp - footer */
 footer {
   background-color: #d6d6d6;
 }
@@ -496,15 +531,36 @@ footer {
 
 .footer-menu a {
   font-size: 20px;
-  padding-left: 92px;
+  padding-left: 40px;
   display: block;
   text-decoration: none;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   color: #373737;
 }
 
-.locations a {
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.one-menu p {
+  font-size: 10px;
+  color: red;
+  padding-left: 40px;
+}
+
+.footer-menu-shop p {
+  font-size: 20px;
+  color: #373737;
+  padding-bottom: 20px;
+}
+
+.menu-detail a {
   font-size: 14px;
+  padding-left: 45px;
+}
+
+.menu-detail a:hover {
+  text-decoration: underline;
 }
 
 .sns-logo {
@@ -513,12 +569,12 @@ footer {
 }
 
 .sns-logo img {
-  width: 45px;
-  height: 45px;
-  padding: 0 20px 20px;
+  width: 30px;
+  height: 30px;
+  padding: 0 10px 20px;
 }
 
-/* /footer */
+/* /Lp - footer */
 
 /* page2 - jeans */
 .shop-top {
@@ -571,7 +627,7 @@ footer {
   color: white;
   font-size: 2.5em;
   text-shadow: -3px 2px 2px rgb(53, 53, 53) ;
-  padding: 260px 20px;
+  padding: 220px 0 0 100px;
 }
 
 .women-men-button {
@@ -588,7 +644,7 @@ footer {
 }
 
 .women-men-button button:hover {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(136, 136, 136);
   color: black;
 }
 
@@ -1023,6 +1079,11 @@ flex-wrap: wrap;
   color: white;
 }
 
+.order-info-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 /* /contact */
 
 @media screen and (max-width: 768px) {
@@ -1311,11 +1372,11 @@ flex-wrap: wrap;
   }
 
   .footer-menu a {
-    padding: 10px;
+    padding: 10px 0 0 0;
   }
 
   .locations a {
-    padding: 5px 15px;
+    padding: 5px 10px;
   }
 
   .footer-logo {
@@ -1354,10 +1415,6 @@ flex-wrap: wrap;
     width: 320px;
     height: 250px;
     margin: 0;
-  }
-
-  .shop-top h2 {
-    padding-top: 220px;
   }
 
   .women-men-button {
