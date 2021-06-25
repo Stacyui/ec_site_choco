@@ -97,7 +97,7 @@ header {
 
 #tabBox1 {
   width: 200px;
-  background-color: white;
+  background-color: #373737;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -108,6 +108,7 @@ header {
   text-decoration: none;
   font-size: 15px;
   padding: 20px 0 10px 10px;
+  color: white;
 }
 
 #tabBox1 a:hover {
