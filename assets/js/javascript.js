@@ -7,11 +7,13 @@ $(document).ready(function () {
 
   // desktop header tab menu
   $(function(){
-    $(".nav-links li a").on("click", function() {
-    $(".tabBoxes").toggle();
-    // $($(this).attr("href")).fadeToggle();
-    });
+    $(".header-nav-shop").on("mousemove", function() {
+      $(".tabBoxes").show();
+      });
     return false;
+    });
+    $(".header-nav-shop").on("mouseout", function() {
+      $(".tabBoxes").hide();
     });
 
   // /desktop header tab menu 
@@ -207,7 +209,7 @@ $(document).ready(function () {
       var pagetop = $('#page_top');   
       pagetop.hide();
       $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+          if ($(this).scrollTop() > 100) {  
               pagetop.fadeIn();
           } else {
               pagetop.fadeOut();

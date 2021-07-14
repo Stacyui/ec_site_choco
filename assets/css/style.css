@@ -87,27 +87,30 @@ header {
   display: none;
 }
 
+.header-nav-shop {
+  display: flex;
+  flex-direction: column;
+}
+
 .tabBoxes {
   z-index: 3;
   display: none;
-  float: right;
-  margin-right: 143px;
   position: relative;
+  margin-left: 40px;
 }
 
 #tabBox1 {
-  width: 200px;
+  /* width: 120px; */
   background-color: #373737;
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 10px;
 }
 
 #tabBox1 a {
   text-decoration: none;
   font-size: 15px;
-  padding: 20px 0 10px 10px;
+  padding: 20px 10px 20px 0px;
   color: white;
 }
 
